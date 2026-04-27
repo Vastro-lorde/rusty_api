@@ -1,0 +1,15 @@
+# Compiled artifacts
+/target
+
+# Environment variables
+.env
+
+# Logs
+logs/
+
+# IDE / Editor configs
+.vscode/
+.idea/
+
+# OS files
+Thumbs.db
