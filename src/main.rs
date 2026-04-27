@@ -98,6 +98,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         // Add Middleware
         .layer(cors)
         .layer(tower_http::trace::TraceLayer::new_for_http())
+        .layer(axum::extract::DefaultBodyLimit::disable())
         // Inject State
         .with_state(state);
 
